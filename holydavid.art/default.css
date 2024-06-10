@@ -964,12 +964,12 @@ body {
   justify-content: space-between;
 }
 
-.OverrideHeader--desktop-link {
+.OverrideHeader .OverrideGhostLink__base-size {
   display: none;
 }
 
 @media (min-width: 1024px) {
-  .OverrideHeader--desktop-link {
+  .OverrideHeader .OverrideGhostLink__base-size {
     display: flex;
     align-items: center;
     justify-content: center;
