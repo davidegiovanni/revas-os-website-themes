@@ -1,0 +1,372 @@
+body {
+    --size-2: calc(var(--spacing-base-unit) * 2);
+    --size-4: calc(var(--spacing-base-unit) * 4);
+    --size-8: calc(var(--spacing-base-unit) * 8);
+    --size-10: calc(var(--spacing-base-unit) * 10);
+    --size-12: calc(var(--spacing-base-unit) * 12);
+    --size-14: calc(var(--spacing-base-unit) * 14);
+    --size-16: calc(var(--spacing-base-unit) * 16);
+    --size-18: calc(var(--spacing-base-unit) * 18);
+    --size-20: calc(var(--spacing-base-unit) * 20);
+    --size-24: calc(var(--spacing-base-unit) * 24);
+    --size-28: calc(var(--spacing-base-unit) * 28);
+    --size-32: calc(var(--spacing-base-unit) * 32);
+    --size-36: calc(var(--spacing-base-unit) * 36);
+  
+    --text-xs: calc(var(--text-base-unit) * 4);
+    --text-sm: calc(var(--text-base-unit) * 6);
+    --text-base: calc(var(--text-base-unit) * 8);
+    --text-lg: calc(var(--text-base-unit) * 10);
+    --text-xl: calc(var(--text-base-unit) * 12);
+    --text-2xl: calc(var(--text-base-unit) * 16);
+    --text-3xl: calc(var(--text-base-unit) * 20);
+    --text-4xl: calc(var(--text-base-unit) * 24);
+    --text-5xl: calc(var(--text-base-unit) * 30);
+    --text-6xl: calc(var(--text-base-unit) * 32);
+    --text-7xl: calc(var(--text-base-unit) * 40);
+    --text-8xl: calc(var(--text-base-unit) * 64);
+  
+    --text-line-xs: calc(var(--text-line-base-unit) * 8);
+    --text-line-sm: calc(var(--text-line-base-unit) * 10);
+    --text-line-base: calc(var(--text-line-base-unit) * 12);
+    --text-line-lg: calc(var(--text-line-base-unit) * 14);
+    --text-line-xl: calc(var(--text-line-base-unit) * 16);
+    --text-line-2xl: calc(var(--text-line-base-unit) * 20);
+    --text-line-3xl: calc(var(--text-line-base-unit) * 24);
+    --text-line-4xl: calc(var(--text-line-base-unit) * 28);
+    --text-line-5xl: calc(var(--text-line-base-unit) * 34);
+    --text-line-6xl: calc(var(--text-line-base-unit) * 36);
+    --text-line-7xl: calc(var(--text-line-base-unit) * 44);
+    --text-line-8xl: calc(var(--text-line-base-unit) * 70);
+  
+    --span-1: span 1 / span 1;
+    --span-2: span 2 / span 2;
+    --span-3: span 3 / span 3;
+    --span-4: span 4 / span 4;
+  
+    --cols-1: repeat(1, minmax(0, 1fr));
+    --cols-2: repeat(2, minmax(0, 1fr));
+    --cols-3: repeat(3, minmax(0, 1fr));
+    --cols-4: repeat(4, minmax(0, 1fr));
+    --cols-5: repeat(5, minmax(0, 1fr));
+    --cols-6: repeat(6, minmax(0, 1fr));
+    --cols-7: repeat(7, minmax(0, 1fr));
+    --cols-8: repeat(8, minmax(0, 1fr));
+    --cols-9: repeat(9, minmax(0, 1fr));
+    --cols-10: repeat(10, minmax(0, 1fr));
+    --cols-11: repeat(11, minmax(0, 1fr));
+    --cols-12: repeat(12, minmax(0, 1fr));
+  
+    --font-extrathin: 100;
+    --font-thin: 200;
+    --font-extralight: 300;
+    --font-light: 400;
+    --font-regular: 500;
+    --font-medium: 600;
+    --font-semibold: 700;
+    --font-bold: 800;
+    --font-extrabold: 900;
+  
+    --opacity-10: 0.1;
+    --opacity-20: 0.2;
+    --opacity-30: 0.3;
+    --opacity-40: 0.4;
+    --opacity-50: 0.5;
+    --opacity-60: 0.6;
+    --opacity-70: 0.7;
+    --opacity-80: 0.8;
+    --opacity-90: 0.9;
+    --opacity-100: 1;
+  
+    /* design systme */
+  
+    --before-content: "";
+    --after-content: "";
+  
+    --color: black;
+    --font-weight: var(--font-regular);
+    --font-size: var(--text-base);
+    --font-line-height: var(--text-line-base);
+    --text-transform: none;
+    --white-space: inherit;
+    --text-overflow: ellipsis;
+    --text-align: left;
+    --letter-spacing: 0em;
+    --text-indent: 0px;
+    --word-break: normal;
+  
+    --text-decoration: none;
+    --text-decoration-style: dotted;
+    --text-decoration-color: inherit;
+    --text-underline-offset: auto;
+  
+    --list-style-position: inside;
+    --list-style-type: disc;
+    --list-style-image: none;
+  
+    --background-attachment: fixed;
+    --background-clip: border-box;
+    --background-origin: border-box;
+    --background-position: center;
+    --background-repeat: no-repeat;
+    --background-size: auto;
+    --background-image: none;
+    --background-color: white;
+  
+    --display: block;
+    --position: static;
+    --top: 0;
+    --bottom: 0;
+    --left: 0;
+    --right: 0;
+    --overflow: hidden;
+    --overscroll-behavior: auto;
+    --visibility: visible;
+    --z-index: 0;
+    --object-position: bottom;
+    --object-fit: contain;
+
+    --aspect-ratio: auto;
+  
+    --width: auto;
+    --min-width: auto;
+    --max-width: auto;
+  
+    --height: auto;
+    --min-height: auto;
+    --max-height: auto;
+  
+    --padding-left: var(--size-4);
+    --padding-top: var(--size-4);
+    --padding-right: var(--size-4);
+    --padding-bottom: var(--size-4);
+    --padding: var(--padding-left) var(--padding-top) var(--padding-right) var(--padding-bottom);
+    
+    --margin-left: 0;
+    --margin-top: 0;
+    --margin-right: 0;
+    --margin-bottom: 0;
+    --margin: var(--margin-left) var(--margin-top) var(--margin-right) var(--margin-bottom);
+  
+    --gap-x: var(--size-4);
+    --gap-y: var(--size-4);
+    --gap: var(--gap-x) var(--gap-y);
+  
+    --opacity: var(--opacity-100);
+  
+    --grid-template-columns: var(--cols-1);
+    --grid-column-span: var(--span-1);
+    --grid-template-rows: var(--cols-1);
+    --grid-row-span: var(--span-1);
+    --grid-auto-flow: row;
+    --grid-auto-columns: auto;
+    --grid-auto-rows: auto;
+  
+    --flex-direction: row;
+    --align-items: start;
+    --align-content: normal;
+    --align-self: auto;
+    --justify-content: start;
+    --justify-items: start;
+    --flex-wrap: wrap;
+    --justify-self: auto;
+    --flex: none;
+    --order: 0;
+    --flex-grow: 0;
+    --flex-shrink: 0;
+    --place-content: start;
+    --place-items: start;
+    --place-self: auto;
+
+  
+    --border-width: 0;
+    --border-color: #e2e8f0;
+    --border-style: solid;
+    --border: var(--border-width) var(--border-style) var(--border-color);
+  
+    --outline-width: 0px;
+    --outline-color: inherit;
+    --outline-style: solid;
+    --outline-offset: 0px;
+  
+    --box-shadow-color: rgb(0 0 0 / 0);
+    --box-shadow-offset-x: 0;
+    --box-shadow-offset-y: 0;
+    --box-shadow-spread: 0;
+    --box-shadow-blur: 0;
+  
+    --box-shadow: var(--box-shadow-offset-x) var(--box-shadow-offset-y) var(--box-shadow-blur) var(--box-shadow-spread) var(--box-shadow-color);
+    --inner-box-shadow: inset var(--box-shadow-offset-x) var(--box-shadow-offset-y) var(--box-shadow-blur) var(--box-shadow-spread) var(--box-shadow-color);
+  
+    --mix-blend-mode: normal;
+    --background-blend-mode: normal;
+  
+    --filter: blur(0);
+    --backdrop-filter: blur(0);
+  
+    --skew-x: 0deg;
+    --skew-y: 0deg;
+    --translate-x: 0px;
+    --translate-y: 0px;
+    --rotate: 0deg;
+    --scale-x: 1;
+    --scale-y: 1;
+    --transform: scale(var(--scale-x), var(--scale-y)), skew(var(--skew-x), var(--skew-y)), translate(var(--translate-x), var(--translate-y)), rotate(var(--rotate));
+  
+    --transform-origin: center;
+  }
+  
+  /* Text properties */
+  body * {
+    color: var(--text-color) !important;
+    font-family: var(--font-family) !important;
+    font-weight: var(--font-weight) !important;
+    font-size: var(--font-size) !important;
+    line-height: var(--font-line-height) !important;
+    text-transform: var(--text-transform) !important;
+    white-space: var(--white-space) !important;
+    text-overflow: var(--text-overflow) !important;
+    text-align: var(--text-align) !important;
+    letter-spacing: var(--letter-spacing) !important;
+    text-indent: var(--text-indent) !important;
+    word-break: var(--word-break) !important;
+  
+    text-decoration: var(--text-decoration) !important;
+    text-decoration-style: var(--text-decoration-style) !important;
+    text-decoration-color: var(--text-decoration-color) !important;
+    text-underline-offset: var(--text-underline-offset) !important;
+  }
+  
+  /* List properties */
+  body li,
+  body ul,
+  body ol {
+    list-style-position: var(--list-style-position) !important;
+    list-style-type: var(--list-style-type) !important;
+    list-style-image: var(--list-style-image) !important;
+  }
+  
+  /* Background properties */
+  body * {
+    background-attachment: var(--background-attachment) !important;
+    background-clip: var(--background-clip) !important;
+    background-origin: var(--background-origin) !important;
+    background-position: var(--background-position) !important;
+    background-repeat: var(--background-repeat) !important;
+    background-size: var(--background-size) !important;
+    background-image: var(--background-image) !important;
+    background-color: var(--bg-color) !important;
+  }
+  
+  /* Box properties */
+  body * {
+    display: var(--display) !important;
+    position: var(--position) !important;
+    top: var(--top) !important;
+    bottom: var(--bottom) !important;
+    left: var(--left) !important;
+    right: var(--right) !important;
+    overflow: var(--overflow) !important;
+    visibility: var(--visibility) !important;
+    overscroll-behavior: var(--overscroll-behavior) !important;
+    z-index: var(--z-index) !important;
+    object-fit: var(--object-fit) !important;
+    object-position: var(--object-position) !important;
+  
+    width: var(--width) !important;
+    min-width: var(--min-width) !important;
+    max-width: var(--max-width) !important;
+  
+    height: var(--height) !important;
+    min-height: var(--min-height) !important;
+    max-height: var(--max-height) !important;
+  
+    padding-left: var(--padding-left) !important;
+    padding-top: var(--padding-top) !important;
+    padding-right: var(--padding-right) !important;
+    padding-bottom: var(--padding-bottom) !important;
+    padding: var(--padding) !important;
+  
+    margin-left: var(--margin-left) !important;
+    margin-top: var(--margin-top) !important;
+    margin-right: var(--margin-right) !important;
+    margin-bottom: var(--margin-bottom) !important;
+    margin: var(--margin) !important;
+  
+    gap: var(--gap) !important;
+  }
+  
+  /* Opacity */
+  body * {
+    opacity: var(--opacity) !important;
+  }
+  
+  /* Grid properties */
+  body * {
+    grid-template-columns: var(--grid-template-columns) !important;
+    grid-column: var(--grid-column-span) !important;
+    grid-template-rows: var(--grid-template-rows) !important;
+    grid-row: var(--grid-row-span) !important;
+    grid-auto-flow: var(--grid-auto-flow) !important;
+    grid-auto-columns: var(--grid-auto-columns) !important;
+    grid-auto-rows: var(--grid-auto-rows) !important;
+  }
+  
+  /* Flex properties */
+  body * {
+    flex-direction: var(--flex-direction) !important;
+    align-items: var(--align-items) !important;
+    justify-content: var(--justify-content) !important;
+    align-self: var(--align-self) !important;
+    justify-items: var(--justify-items) !important;
+    flex-wrap: var(--flex-wrap) !important;
+    justify-self: var(--justify-self) !important;
+    flex: var(--flex) !important;
+    order: var(--order) !important;
+    flex-grow: var(--flex-grow) !important;
+    flex-shrink: var(--flex-shrink) !important;
+    place-content: var(--place-content) !important;
+    place-items: var(--place-items) !important;
+    place-self: var(--place-self) !important;
+  }
+  
+  /* Border properties */
+  body * {
+    border-width: var(--border-width) !important;
+    border-color: var(--border-color) !important;
+    border-style: var(--border-style) !important;
+    border: var(--border) !important;
+    border-radius: var(--border-radius);
+  }
+  
+  /* Outline properties */
+  body * {
+    outline-width: var(--outline-width) !important;
+    outline-color: var(--outline-color) !important;
+    outline-style: var(--outline-style) !important;
+    outline-offset: var(--outline-offset) !important;
+  }
+  
+  /* Box shadow */
+  body * {
+    box-shadow: var(--box-shadow) !important;
+  }
+  
+  /* Blend modes */
+  body * {
+    mix-blend-mode: var(--mix-blend-mode) !important;
+    background-blend-mode: var(--background-blend-mode) !important;
+  }
+  
+  /* Filter properties */
+  body * {
+    filter: var(--filter) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+  }
+  
+  /* Transform properties */
+  body * {
+    transform: scale(var(--scale-x), var(--scale-y)) skew(var(--skew-x), var(--skew-y)) translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) !important;
+    transform-origin: var(--transform-origin) !important;
+  }
+  
