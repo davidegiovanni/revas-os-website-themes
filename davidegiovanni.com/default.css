@@ -1,96 +1,133 @@
-html {
-  overscroll-behavior: none;
-}
-
 :root {
-  --neutral: #bababa;
-  --highlight: #a8ff79;
-  --highlight-contrast: black;
---background-color: var(--neutral);
+  --text-color: black;
+  --bg-color: white;
+
+  --size-2: calc(var(--spacing-base-unit) * 2);
+  --size-4: calc(var(--spacing-base-unit) * 4);
+  --size-8: calc(var(--spacing-base-unit) * 8);
+  --size-10: calc(var(--spacing-base-unit) * 10);
+  --size-12: calc(var(--spacing-base-unit) * 12);
+  --size-14: calc(var(--spacing-base-unit) * 14);
+  --size-16: calc(var(--spacing-base-unit) * 16);
+  --size-18: calc(var(--spacing-base-unit) * 18);
+  --size-20: calc(var(--spacing-base-unit) * 20);
+  --size-24: calc(var(--spacing-base-unit) * 24);
+  --size-28: calc(var(--spacing-base-unit) * 28);
+  --size-32: calc(var(--spacing-base-unit) * 32);
+  --size-36: calc(var(--spacing-base-unit) * 36);
+
+  --text-xs: calc(var(--text-base-unit) * 2);
+  --text-sm: calc(var(--text-base-unit) * 4);
+  --text-base: calc(var(--text-base-unit) * 8);
+  --text-lg: calc(var(--text-base-unit) * 10);
+  --text-xl: calc(var(--text-base-unit) * 12);
+  --text-2xl: calc(var(--text-base-unit) * 16);
+  --text-3xl: calc(var(--text-base-unit) * 20);
+  --text-4xl: calc(var(--text-base-unit) * 24);
+  --text-5xl: calc(var(--text-base-unit) * 30);
+  --text-6xl: calc(var(--text-base-unit) * 32);
+  --text-7xl: calc(var(--text-base-unit) * 40);
+  --text-8xl: calc(var(--text-base-unit) * 64);
+
+  --text-line-xs: calc(var(--text-line-base-unit) * 6);
+  --text-line-sm: calc(var(--text-line-base-unit) * 8);
+  --text-line-base: calc(var(--text-line-base-unit) * 12);
+  --text-line-lg: calc(var(--text-line-base-unit) * 14);
+  --text-line-xl: calc(var(--text-line-base-unit) * 16);
+  --text-line-2xl: calc(var(--text-line-base-unit) * 20);
+  --text-line-3xl: calc(var(--text-line-base-unit) * 24);
+  --text-line-4xl: calc(var(--text-line-base-unit) * 28);
+  --text-line-5xl: calc(var(--text-line-base-unit) * 34);
+  --text-line-6xl: calc(var(--text-line-base-unit) * 36);
+  --text-line-7xl: calc(var(--text-line-base-unit) * 44);
+  --text-line-8xl: calc(var(--text-line-base-unit) * 70);
+
+  --span-1: span 1 / span 1;
+  --span-2: span 2 / span 2;
+  --span-3: span 3 / span 3;
+  --span-4: span 4 / span 4;
+
+  --cols-1: repeat(1, minmax(0, 1fr));
+  --cols-2: repeat(2, minmax(0, 1fr));
+  --cols-3: repeat(3, minmax(0, 1fr));
+  --cols-4: repeat(4, minmax(0, 1fr));
+  --cols-5: repeat(5, minmax(0, 1fr));
+  --cols-6: repeat(6, minmax(0, 1fr));
+  --cols-7: repeat(7, minmax(0, 1fr));
+  --cols-8: repeat(8, minmax(0, 1fr));
+  --cols-9: repeat(9, minmax(0, 1fr));
+  --cols-10: repeat(10, minmax(0, 1fr));
+  --cols-11: repeat(11, minmax(0, 1fr));
+  --cols-12: repeat(12, minmax(0, 1fr));
+
+  --before-content: "";
+  --after-content: "";
+}
+/* Default block */
+
+.OverrideDefaultBlock {
+  --bg-color: transparent;
+  padding: var(--size-4) !important;
+  gap: var(--size-4) !important;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-bottom: calc(var(--size-4) * -1);
+}
+.OverrideDefaultBlock:after {
+  content: var(--after-content);
+  height: var(--size-4);
+  width: 100%;
 }
 
-body {
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: start;
-  background-color: var(--background-color);
+.OverrideDefaultBlock--container {
+  display: grid;
+  grid-template-columns: var(--cols-2);
+  gap: var(--size-4) !important;
+  grid-column: var(--span-3);
 }
 
-body div,
-body section,
-body nav,
-body footer {
-  background-color: var(--background-color) !important;
-}
-
-body div.z-\[70\] {
-  display: none;
-}
-
-/* /FULL SCREEN HERO */
-
-.HeaderHero .OverrideMainBlockContainer--first-slot,
-.HeaderHero .OverrideDefaultBlockContainer--first-slot {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: calc(var(--spacing-base-unit)*8);;
-}
-
-/* LINKS */
-
-.OverrideSolidLink__base-size {
-  border-radius: 9999px;
-  padding: 1rem 2rem;
-  background-color: var(--highlight);
-  color: var(--highlight-contrast);
-  font-size: calc(var(--text-base-unit)*12);
-  line-height: calc(var(--text-line-base-unit)*16);
-  &:hover {
-    background-color: var(--highlight);
-    color: var(--highlight-contrast);
+@media screen and (min-width: 1280px) {
+  .OverrideDefaultBlock--container {
+    grid-column: var(--span-2);
   }
 }
 
-.OverrideSolidLink__base-size {
-  --highlight: white;
-  border-radius: 9999px;
-  padding: 1rem 2rem;
-  background-color: var(--highlight);
-  color: var(--highlight-contrast);
-  font-size: calc(var(--text-base-unit)*12);
-  line-height: calc(var(--text-line-base-unit)*16);
-  &:hover {
-    background-color: var(--highlight);
-    color: var(--highlight-contrast);
-  }
+.OverrideDefaultBlockContainer--first-slot {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: start !important;
+  justify-content: start !important;
+  gap: var(--size-4) !important;
 }
 
-.OverrideOutlineLink__base-size {
-  --highlight: transparent;
-  border: 1px solid var(--highlight-contrast);
-  border-radius: 9999px;
-  padding: 1rem 2rem;
-  background-color: var(--highlight);
-  color: var(--highlight-contrast);
-  font-size: calc(var(--text-base-unit)*12);
-  line-height: calc(var(--text-line-base-unit)*16);
-  &:hover {
-    background-color: var(--highlight);
-    color: var(--highlight-contrast);
-  }
-}
-
-.OverrideTextLink__base-size {
-  --highlight: transparent;
+.OverrideDefaultBlockContainer--second-slot {
   padding: 0 !important;
-  color: var(--highlight-contrast);
-  font-size: calc(var(--text-base-unit)*12);
-  line-height: calc(var(--text-line-base-unit)*16);
-  &:hover {
-    background-color: var(--highlight);
-    color: var(--highlight-contrast);
-  }
+}
+
+.OverrideDefaultBlock--items-wrapper {
+  padding: 0 !important;
+}
+
+.OverrideDefaultBlock--items-container {
+  padding: 0 !important;
+}
+
+.OverrideDefaultBlock--title {
+  color: var(--text-color);
+  font-size: var(--text-sm);
+  line-height: var(--text-line-sm);
+}
+
+.OverrideDefaultBlock--description {
+  color: var(--text-color);
+  opacity: var(--opacity-70);
+  font-size: var(--text-lg);
+  line-height: var(--text-line-lg);
+}
+
+.OverrideDefaultBlock--attachment {
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }

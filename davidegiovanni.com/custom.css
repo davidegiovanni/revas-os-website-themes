@@ -1,0 +1,96 @@
+:root {
+  --neutral: #bababa;
+  --highlight: #a8ff79;
+  --highlight-contrast: black;
+--background-color: var(--neutral);
+}
+
+html {
+  overscroll-behavior: none;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: start;
+  background-color: var(--background-color);
+}
+
+body div,
+body section,
+body nav,
+body footer {
+  background-color: var(--background-color) !important;
+}
+
+body div.z-\[70\] {
+  display: none;
+}
+
+/* /FULL SCREEN HERO */
+
+.HeaderHero .OverrideMainBlockContainer--first-slot,
+.HeaderHero .OverrideDefaultBlockContainer--first-slot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: calc(var(--spacing-base-unit)*8);;
+}
+
+/* LINKS */
+
+.OverrideSolidLink__base-size {
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  background-color: var(--highlight);
+  color: var(--highlight-contrast);
+  font-size: calc(var(--text-base-unit)*12);
+  line-height: calc(var(--text-line-base-unit)*16);
+  &:hover {
+    background-color: var(--highlight);
+    color: var(--highlight-contrast);
+  }
+}
+
+.OverrideSolidLink__base-size {
+  --highlight: white;
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  background-color: var(--highlight);
+  color: var(--highlight-contrast);
+  font-size: calc(var(--text-base-unit)*12);
+  line-height: calc(var(--text-line-base-unit)*16);
+  &:hover {
+    background-color: var(--highlight);
+    color: var(--highlight-contrast);
+  }
+}
+
+.OverrideOutlineLink__base-size {
+  --highlight: transparent;
+  border: 1px solid var(--highlight-contrast);
+  border-radius: 9999px;
+  padding: 1rem 2rem;
+  background-color: var(--highlight);
+  color: var(--highlight-contrast);
+  font-size: calc(var(--text-base-unit)*12);
+  line-height: calc(var(--text-line-base-unit)*16);
+  &:hover {
+    background-color: var(--highlight);
+    color: var(--highlight-contrast);
+  }
+}
+
+.OverrideTextLink__base-size {
+  --highlight: transparent;
+  padding: 0 !important;
+  color: var(--highlight-contrast);
+  font-size: calc(var(--text-base-unit)*12);
+  line-height: calc(var(--text-line-base-unit)*16);
+  &:hover {
+    background-color: var(--highlight);
+    color: var(--highlight-contrast);
+  }
+}

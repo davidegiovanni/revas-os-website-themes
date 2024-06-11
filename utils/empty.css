@@ -1,0 +1,378 @@
+/* VARIABLES YOU CAN USE */
+/* --custom-font
+--text-base-unit
+--text-line-base-unit
+--spacing-base-unit
+--primary-color
+--darker-primary-color
+--primary-contrast-color
+--border-radius
+--border-radius-inner */
+
+:root {}
+
+* {}
+
+body {}
+
+html {}
+
+/* /LAYOUTS */
+
+.App {}
+
+.Page {}
+
+/* LINKS */
+
+.SolidLink__base-size {}
+
+.SoftLink__base-size {}
+
+.OutlineLink__base-size {}
+
+.GhostLink__base-size {}
+
+.TextLink__base-size {}
+
+/* Default block */
+
+.DefaultBlock {}
+
+.DefaultBlock--container {}
+
+.DefaultBlockContainer--first-slot {}
+
+.DefaultBlockContainer--second-slot {}
+
+.DefaultBlock--items-wrapper {}
+
+.DefaultBlock--items-container {}
+
+.DefaultBlock--columns-container {}
+
+.DefaultBlock--title {}
+
+.DefaultBlock--icon {}
+
+.DefaultBlock--description {}
+
+.DefaultBlock--attachment {}
+
+/* Main block */
+
+.MainBlock {}
+
+.MainBlock--container {}
+
+.MainBlockContainer--first-slot {}
+
+.MainBlockContainer--second-slot {}
+
+.MainBlock--items-wrapper {}
+
+.MainBlock--items-container {}
+
+.MainBlock--columns-container {}
+
+.MainBlock--title {}
+
+.MainBlock--icon {}
+
+.MainBlock--description {}
+
+.MainBlock--attachment {}
+
+.MainBlock--link {}
+
+/* BLOCK ITEMS */
+
+/* Grid */
+
+.BlockItemsGrid {}
+
+.GridBlockItem {}
+
+.GridBlockItem--container {}
+
+.GridBlockItemContainer--second-slot {}
+
+.GridBlockItemContainer--first-slot {}
+
+.GridBlockItem--title {}
+
+.GridBlockItem--description {}
+
+.GridBlockItem--attachment {}
+
+/* Columns */
+
+.BlockItemsColumns {}
+
+.BlockItemsColumns--column {}
+
+.ColumnsBlockItem {}
+
+.ColumnsBlockItem--container {}
+
+.ColumnsBlockItemContainer--second-slot {}
+
+.ColumnsBlockItemContainer--first-slot {}
+
+.ColumnsBlockItem--title {}
+
+.ColumnsBlockItem--description {}
+
+.ColumnsBlockItem--attachment {}
+
+/* Linear */
+
+.BlockItemsLinear {}
+
+.LinearBlockItem {}
+
+.LinearBlockItem--container {}
+
+.LinearBlockItemContainer--second-slot {}
+
+.LinearBlockItemContainer--first-slot {}
+
+.LinearBlockItem--title {}
+
+.LinearBlockItem--description {}
+
+.LinearBlockItem--attachment {}
+
+/* HEADER */
+
+.Header {}
+
+.Header--desktop-wrapper {}
+
+.Header--container {}
+
+.Header--logo {}
+
+.Header--desktop-links {}
+
+.Header--desktop-links-wrapper {}
+
+.Header--menu-button {}
+
+.Header--mobile-wrapper {}
+
+.Header--mobile-links {}
+
+.Header--mobile-main-action {}
+
+/* NOTIFICATION */
+
+.Notification {}
+
+.Notification--container {}
+
+.Notification--title {}
+
+.Notification--description {}
+
+.Notification--link {}
+
+/* MAIN ITEM */
+
+.MainItem {}
+
+.MainItem--container {}
+
+.MainItemContainer--first-slot {}
+
+.MainItemContainer--second-slot {}
+
+.MainItem--title {}
+
+.MainItem--description {}
+
+.MainItem--attachment {}
+
+.MainItem--link {}
+
+/* FOOTER */
+
+.Footer {}
+
+.Footer--logo {}
+
+.Footer--container {}
+
+.Footer--links-title {}
+
+.Footer--links {}
+
+.Footer--socials {}
+
+.Footer--authors {}
+
+.Footer--foot {}
+
+.FooterFoot--container {}
+
+/* AUTHOR */
+
+.Author {}
+
+.Author--container {}
+
+.Author--title {}
+
+.Author--description {}
+
+.Author--image {}
+
+.Author--links {}
+
+.Author--link {}
+
+/* SOCIALS */
+
+.SocialLink--icon {}
+
+/* ATTACHMENT */
+
+.Attachment--video {}
+
+.Attachment--figure {}
+
+.AttachmentFigure--picture {}
+
+.AttachmentFigure--caption {}
+
+.AttachmentPicture--source {}
+
+.AttachmentPicture--image {}
+
+/* FEED */
+
+.FeedBlockItem {}
+
+.FeedBlockItem--container {}
+
+.FeedBlockItemContainer--second-slot {}
+
+.FeedBlockItemContainer--first-slot {}
+
+.FeedBlockItem--title {}
+
+.FeedBlockItem--description {}
+
+.FeedBlockItem--date {}
+
+.FeedBlockItem--attachment {}
+
+.FeedBlockItem--attachment-image {}
+
+.FeedPage {}
+
+.FeedPage--header-container {}
+
+.FeedPage--header {}
+
+.FeedPage--title {}
+
+.FeedPage--description {}
+
+.FeedPage--items-container {}
+
+.FeedPage--items {}
+
+/* CONTENT */
+
+.ContentPage {}
+
+.ContentPage--header {}
+
+.ContentHeader--container {}
+
+.ContentHeaderContainer--first-slot {}
+
+.ContentHeaderContainer--second-slot {}
+
+.ContentHeader--feed-title {}
+
+.ContentHeader--title {}
+
+.ContentHeader--description {}
+
+.ContentHeader--published-date {}
+
+.ContentHeader--attachment {}
+
+.ContentPage--content {}
+
+/* ACCESSIBILITY CONFIGURATOR */
+
+.ToolBar--accessibility-configurator {
+}
+
+.AccessibilityConfigurator--trigger-button {
+}
+
+.AccessibilityConfigurator--trigger-icon {
+}
+
+.AccessibilityConfigurator--menu-content {
+}
+
+.AccessibilityMenu--label {
+}
+
+.AccessibilityMenu--radio-group {
+}
+
+.AccessibilityMenu--radio-item {
+}
+
+.AccessibilityMenu--label__small-size {
+}
+
+/* ERRORS */
+
+.AppError {
+}
+
+.AppError--container {
+}
+
+.AppError--title {
+}
+
+.AppError--details {
+}
+
+.AppError--message {
+}
+
+.AppError--list {
+}
+
+.DefaultError {
+}
+
+.DefaultError--title {
+}
+
+.DefaultError--description {
+}
+
+.DefaultError--link {
+}
+
+.DefaultError--details {
+}
+
+/* OTHERS */
+
+.DefaultLinkIcon__small-size {
+}
+
+.LoadingBar {
+}
+
