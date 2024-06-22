@@ -275,11 +275,13 @@ aspect-ratio: 2 / 1;
 .Portfolio .OverrideMainBlock--items-container {
     width: 100%;
     max-width: none;
+    padding: 0;
 }
 
 .Portfolio .OverrideBlockItemsGrid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     max-width: none;
+    padding: 0;
 }
 
 .Portfolio .OverrideGridBlockItem {
@@ -289,6 +291,7 @@ aspect-ratio: 2 / 1;
     height: 100%;
     overflow: hidden;
     display: block;
+    padding: 0;
 }
 
 .Portfolio .OverrideGridBlockItem--container {
@@ -309,7 +312,7 @@ aspect-ratio: 2 / 1;
     height: 100%;
     overflow: hidden;
     display: block;
-    padding: calc(var(--spacing-base-unit) * 8);
+    padding: 0;
 }
 
 .Portfolio .OverrideGridBlockItem--title {
