@@ -155,7 +155,6 @@ html {}
 }
 
 .Homepage .OverrideGridBlockItemContainer--first-slot {
-    display: none !important;
     position: static;
     width: 100%;
     height: 100%;
