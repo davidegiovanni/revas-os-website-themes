@@ -257,6 +257,7 @@ html {}
 .OverrideHeader--desktop-links {
     justify-content: center;
     width: fit-content;
+    gap: calc(var(--spacing-base-unit)*8);
 }
 
 .OverrideHeader--desktop-links .OverrideGhostLink__base-size {
