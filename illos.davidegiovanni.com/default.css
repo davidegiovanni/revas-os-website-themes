@@ -230,15 +230,20 @@ html {}
 .OverrideHeader {
     background-color: transparent !important;
     width: fit-content;
+    margin: auto;
 }
+
 
 .OverrideHeader--desktop-wrapper {
     background-color: transparent !important;
+    -webkit-backdrop-filter: none;
     backdrop-filter: none;
 }
 
 .OverrideHeader--container {
     background-color: transparent !important;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
 }
 
 .OverrideHeader--logo  {
@@ -246,11 +251,30 @@ html {}
     top: 0;
     left: 0;
     z-index: 20;
+    isolation: isolate;
 }
 
 .OverrideHeader--desktop-links {
     justify-content: center;
     width: fit-content;
+}
+
+.OverrideHeader--desktop-links .OverrideGhostLink__base-size {
+    border-radius: 9999px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.OverrideHeader--desktop-links .OverrideSolidLink__base-size {
+    border-radius: 9999px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .OverrideHeader--desktop-links-wrapper {
