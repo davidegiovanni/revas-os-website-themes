@@ -1,17 +1,17 @@
 
 .OverrideDefaultBlock {
-  --bg-color: transparent;
-  --display: grid;
-  --margin-bottom: calc(var(--size-4) * -1);
-  --padding: var(--size-4);
-  --gap: var(--size-4);
-  --grid-template-column: var(--col-span-3);
+  --bg-color: transparent  !important;
+  --display: grid !important;
+  --margin-bottom: calc(var(--size-4) * -1)  !important;
+  --padding: var(--size-4)  !important;
+  --gap: var(--size-4)  !important;
+  --grid-template-column: var(--col-span-3)  !important;
 }
 
 .OverrideDefaultBlock:after {
-  content: var(--after-content);
-  height: var(--size-4);
-  width: 100%;
+  content: var(--after-content)  !important;
+  height: var(--size-4)  !important;
+  width: 100%  !important;
 }
 
 .OverrideDefaultBlock--container {
@@ -19,41 +19,54 @@
   --grid-template-columns: var(--cols-2) !important;
   --margin: 0 !important;
   --padding: 0 !important;
-  --gap: var(--size-4);
-  --grid-column-span: var(--span-3);
+  --gap: var(--size-4)  !important;
+  --grid-column-span: var(--span-3)  !important;
 }
 
 @media screen and (min-width: 1280px) {
   .OverrideDefaultBlock--container {
-    --grid-column-span: var(--span-2)
+    --grid-column-span: var(--span-2) !important;
   }
 }
 
 .OverrideDefaultBlockContainer--first-slot {
-  --display: flex;
-  --flex-direction: column;
+  --display: flex !important;
+  --flex-direction: column !important;
   --margin: 0 !important;
   --padding: 0 !important;
-  --gap: var(--size-4);
+  --gap: var(--size-4) !important;
+  --grid-column-span: var(--span-2) !important;
+}
+@media screen and (min-width: 1280px) {
+  .OverrideDefaultBlockContainer--first-slot {
+    --grid-column-span: var(--span-1) !important;
+  }
 }
 
 .OverrideDefaultBlockContainer--second-slot {
-  --padding: 0;
+  --padding: 0 !important;
+  --grid-column-span: var(--span-2) !important;
+}
+
+@media screen and (min-width: 1280px) {
+  .OverrideDefaultBlockContainer--second-slot {
+    --grid-column-span: var(--span-1) !important;
+  }
 }
 
 .OverrideDefaultBlock--items-wrapper {
-  --padding: 0;
-  --grid-column-span: var(--span-3);
+  --padding: 0 !important;;
+  --grid-column-span: var(--span-3) !important;
 }
 
 @media screen and (min-width: 1280px) {
   .OverrideDefaultBlock--items-wrapper {
-    --grid-column-span: var(--span-1);
+    --grid-column-span: var(--span-1) !important;
   }
 }
 
 .OverrideDefaultBlock--items-container {
-  --padding: 0;
+  --padding: 0 !important;
 }
 
 .OverrideDefaultBlock--title {

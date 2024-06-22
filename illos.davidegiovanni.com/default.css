@@ -1,0 +1,439 @@
+/* VARIABLES YOU CAN USE */
+/* --custom-font
+--text-base-unit
+--text-line-base-unit
+--spacing-base-unit
+--primary-color
+--darker-primary-color
+--primary-contrast-color
+--border-radius
+--border-radius-inner */
+
+:root {}
+
+* {}
+
+body {}
+
+html {}
+
+/* /LAYOUTS */
+
+/* Homepage block */
+
+.Homepage .OverrideDefaultBlock,
+.Homepage .OverrideMainBlock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+/* .Homepage .OverrideDefaultBlock--container,
+.Homepage .OverrideMainBlock--container {} */
+
+.Homepage .OverrideDefaultBlockContainer--first-slot,
+.Homepage .OverrideMainBlockContainer--first-slot {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.Homepage .OverrideDefaultBlock--title,
+.Homepage .OverrideMainBlock--title {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.Homepage .OverrideDefaultBlock--icon,
+.Homepage .OverrideMainBlock--icon {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.Homepage .OverrideDefaultBlock--description,
+.Homepage .OverrideMainBlock--description {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* .Homepage .OverrideDefaultBlockContainer--second-slot {} */
+
+.Homepage .OverrideDefaultBlock--attachment,
+.Homepage .OverrideMainBlock--attachment {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    overflow: hidden;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 20;
+}
+
+.Homepage .OverrideDefaultBlock--items-wrapper,
+.Homepage .OverrideMainBlock--items-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.Homepage .OverrideDefaultBlock--items-container,
+.Homepage .OverrideMainBlock--items-container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+}
+
+.Homepage .OverrideBlockItemsGrid {
+    flex: 1 1 0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Homepage .OverrideGridBlockItem {
+    border-width: 0 !important;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.Homepage .OverrideGridBlockItem--container {
+    position: static;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.Homepage .OverrideGridBlockItemContainer--second-slot {
+    position: static;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    padding: calc(var(--spacing-base-unit) * 8);
+}
+
+.Homepage .OverrideGridBlockItemContainer--first-slot {
+    display: none !important;
+}
+
+.Homepage .OverrideGridBlockItem--title {
+    display: none !important;
+}
+
+.Homepage .OverrideGridBlockItem--description {
+    display: none !important;
+}
+
+.Homepage .OverrideGridBlockItem--attachment {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Homepage .OverrideGridBlockItem--attachment img,
+.Homepage .OverrideGridBlockItem--attachment picture {
+    object-fit: contain;
+}
+
+/* Columns */
+
+.BlockItemsColumns {}
+
+.BlockItemsColumns--column {}
+
+.ColumnsBlockItem {}
+
+.ColumnsBlockItem--container {}
+
+.ColumnsBlockItemContainer--second-slot {}
+
+.ColumnsBlockItemContainer--first-slot {}
+
+.ColumnsBlockItem--title {}
+
+.ColumnsBlockItem--description {}
+
+.ColumnsBlockItem--attachment {}
+
+/* Linear */
+
+.BlockItemsLinear {}
+
+.LinearBlockItem {}
+
+.LinearBlockItem--container {}
+
+.LinearBlockItemContainer--second-slot {}
+
+.LinearBlockItemContainer--first-slot {}
+
+.LinearBlockItem--title {}
+
+.LinearBlockItem--description {}
+
+.LinearBlockItem--attachment {}
+
+/* HEADER */
+
+.Header {}
+
+.Header--desktop-wrapper {}
+
+.Header--container {}
+
+.Header--logo  {}
+
+.Header--desktop-links {}
+
+.Header--desktop-links-wrapper {}
+
+.Header--menu-button {}
+
+.Header--mobile-wrapper {}
+
+.Header--mobile-links {}
+
+.Header--mobile-main-action {}
+
+/* NOTIFICATION */
+
+.Notification {}
+
+.Notification--container {}
+
+.Notification--title {}
+
+.Notification--description {}
+
+.Notification--link {}
+
+/* MAIN ITEM */
+
+.MainItem {}
+
+.MainItem--container {}
+
+.MainItemContainer--first-slot {}
+
+.MainItemContainer--second-slot {}
+
+.MainItem--title {}
+
+.MainItem--description {}
+
+.MainItem--attachment {}
+
+.MainItem--link {}
+
+/* FOOTER */
+
+.Footer {}
+
+.Footer--logo {}
+
+.Footer--container {}
+
+.Footer--links-title {}
+
+.Footer--links {}
+
+.Footer--socials {}
+
+.Footer--authors {}
+
+.Footer--foot {}
+
+.FooterFoot--container {}
+
+/* AUTHOR */
+
+.Author {}
+
+.Author--container {}
+
+.Author--title {}
+
+.Author--description {}
+
+.Author--image {}
+
+.Author--links {}
+
+.Author--link {}
+
+/* SOCIALS */
+
+.SocialLink--icon {}
+
+/* ATTACHMENT */
+
+.Attachment--video {}
+
+.Attachment--figure {}
+
+.AttachmentFigure--picture {}
+
+.AttachmentFigure--caption {}
+
+.AttachmentPicture--source {}
+
+.AttachmentPicture--image {}
+
+/* FEED */
+
+.FeedBlockItem {}
+
+.FeedBlockItem--container {}
+
+.FeedBlockItemContainer--second-slot {}
+
+.FeedBlockItemContainer--first-slot {}
+
+.FeedBlockItem--title {}
+
+.FeedBlockItem--description {}
+
+.FeedBlockItem--date {}
+
+.FeedBlockItem--attachment {}
+
+.FeedBlockItem--attachment-image {}
+
+.FeedPage {}
+
+.FeedPage--header-container {}
+
+.FeedPage--header {}
+
+.FeedPage--title {}
+
+.FeedPage--description {}
+
+.FeedPage--items-container {}
+
+.FeedPage--items {}
+
+/* CONTENT */
+
+.ContentPage {}
+
+.ContentPage--header {}
+
+.ContentHeader--container {}
+
+.ContentHeaderContainer--first-slot {}
+
+.ContentHeaderContainer--second-slot {}
+
+.ContentHeader--feed-title {}
+
+.ContentHeader--title {}
+
+.ContentHeader--description {}
+
+.ContentHeader--published-date {}
+
+.ContentHeader--attachment {}
+
+.ContentPage--content {}
+
+/* ACCESSIBILITY CONFIGURATOR */
+
+.ToolBar--accessibility-configurator {
+}
+
+.AccessibilityConfigurator--trigger-button {
+}
+
+.AccessibilityConfigurator--trigger-icon {
+}
+
+.AccessibilityConfigurator--menu-content {
+}
+
+.AccessibilityMenu--label {
+}
+
+.AccessibilityMenu--radio-group {
+}
+
+.AccessibilityMenu--radio-item {
+}
+
+.AccessibilityMenu--label__small-size {
+}
+
+/* ERRORS */
+
+.AppError {
+}
+
+.AppError--container {
+}
+
+.AppError--title {
+}
+
+.AppError--details {
+}
+
+.AppError--message {
+}
+
+.AppError--list {
+}
+
+.DefaultError {
+}
+
+.DefaultError--title {
+}
+
+.DefaultError--description {
+}
+
+.DefaultError--link {
+}
+
+.DefaultError--details {
+}
+
+/* OTHERS */
+
+.DefaultLinkIcon__small-size {
+}
+
+.LoadingBar {
+}
+
