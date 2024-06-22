@@ -255,7 +255,7 @@ html {}
     margin: calc(var(--spacing-base-unit) * 8)
 }
 
-.Header:has(+ .Page[data-page-slug="index"]) .OverrideHeader--logo {
+.Header:has(+div.Page[data-page-slug="index"]) .OverrideHeader--logo {
     display: hidden;
 }
 
