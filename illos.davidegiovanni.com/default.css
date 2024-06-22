@@ -268,7 +268,7 @@ html {}
     font-weight: 400;
 }
 
-.OverrideHeader--desktop-links .OverrideSolidLink__base-size {
+.OverrideHeader .OverrideSolidLink__base-size {
     border-radius: 9999px;
     background-color: black;
     color: white;
