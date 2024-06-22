@@ -252,12 +252,17 @@ html {}
     left: 0;
     z-index: 20;
     isolation: isolate;
+    margin: calc(var(--spacing-base-unit) * 8)
+}
+
+.Header:has(+ .Page[data-page-slug="index"]) .OverrideHeader--logo {
+    display: hidden;
 }
 
 .OverrideHeader--desktop-links {
     justify-content: center;
     width: fit-content;
-    gap: calc(var(--spacing-base-unit)*8);
+    gap: calc(var(--spacing-base-unit)*12);
 }
 
 .OverrideHeader--desktop-links .OverrideGhostLink__base-size {
@@ -276,6 +281,7 @@ html {}
     border: 1px solid black;
     text-transform: uppercase;
     font-weight: 400;
+    padding: var(--spacing-base-unit) calc(var(--spacing-base-unit)*4);
 }
 
 .OverrideHeader--desktop-links-wrapper {
@@ -295,8 +301,10 @@ html {}
     border: 1px solid black;
     text-transform: uppercase;
     font-weight: 400;
-    width: 1rem;
-    height: 1rem;
+    width: fit-content;
+    height: fit-content;
+    aspect-ratio: 1/1;
+    margin: calc(var(--spacing-base-unit) * 8)
 }
 
 .OverrideHeader--mobile-wrapper {
