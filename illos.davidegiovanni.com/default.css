@@ -187,6 +187,139 @@ html {}
     object-position: center;
 }
 
+/* Portfolio block */
+
+.Portfolio .OverrideDefaultBlock,
+.Portfolio .OverrideMainBlock {
+    border-top: 1px solid lightgray;
+    padding: calc(var(--spacing-base-unit) * 12);
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    max-width: none;
+    background-color: white !important;
+}
+
+.Portfolio .OverrideDefaultBlock--container,
+.Portfolio .OverrideMainBlock--container {
+    grid-column: span 5 / span 5;
+}
+@media screen and (min-width: 1024px) {
+    .Portfolio .OverrideDefaultBlock--container,
+    .Portfolio .OverrideMainBlock--container {
+        grid-column: span 2 / span 2;
+    }  
+}
+
+/* .Portfolio .OverrideDefaultBlockContainer--first-slot,
+.Portfolio .OverrideMainBlockContainer--first-slot {
+    
+} */
+
+.Portfolio .OverrideDefaultBlock--title,
+.Portfolio .OverrideMainBlock--title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: calc(var(--text-base-unit) * 8);
+    line-height: calc(var(--text-line-base-unit) * 12);
+}
+
+.Portfolio .OverrideDefaultBlock--icon,
+.Portfolio .OverrideMainBlock--icon {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+.Portfolio .OverrideDefaultBlock--description,
+.Portfolio .OverrideMainBlock--description {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: calc(var(--text-base-unit) * 8);
+    line-height: calc(var(--text-line-base-unit) * 12);
+}
+
+.Portfolio .OverrideDefaultBlockContainer--second-slot {
+    display: none;
+}
+
+.Portfolio .OverrideDefaultBlock--attachment,
+.Portfolio .OverrideMainBlock--attachment {
+    display: none;
+}
+
+.Portfolio .OverrideDefaultBlock--items-wrapper,
+.Portfolio .OverrideMainBlock--items-wrapper {
+    grid-column: span 5 / span 5;
+}
+@media screen and (min-width: 1024px) {
+    .Portfolio .OverrideDefaultBlock--items-wrapper,
+.Portfolio .OverrideMainBlock--items-wrapper {
+        grid-column: span 3 / span 3;
+    }  
+}
+
+.Portfolio .OverrideDefaultBlock--items-container,
+.Portfolio .OverrideMainBlock--items-container {
+    width: 100%;
+    max-width: none;
+}
+
+.Portfolio .OverrideBlockItemsGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: none;
+}
+
+.Portfolio .OverrideGridBlockItem {
+    border-width: 0 !important;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.Portfolio .OverrideGridBlockItem--container {
+    position: static;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.Portfolio .OverrideGridBlockItemContainer--second-slot {
+    display: none !important;
+}
+
+.Portfolio .OverrideGridBlockItemContainer--first-slot {
+    position: static;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    padding: calc(var(--spacing-base-unit) * 8);
+}
+
+.Portfolio .OverrideGridBlockItem--title {
+    display: none !important;
+}
+
+.Portfolio .OverrideGridBlockItem--description {
+    display: none !important;
+}
+
+.Portfolio .OverrideGridBlockItem--attachment {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    aspect-ratio: 2 / 1;
+}
+
+.Portfolio .OverrideGridBlockItem--attachment img,
+.Portfolio .OverrideGridBlockItem--attachment picture {
+    object-fit: cover;
+    object-position: center;
+}
+
 /* Columns */
 
 .BlockItemsColumns {}
