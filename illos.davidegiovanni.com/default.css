@@ -202,6 +202,7 @@ aspect-ratio: 2 / 1;
     padding: calc(var(--spacing-base-unit) * 12);
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
+    padding: calc(var(--spacing-base-unit) * 8);
     max-width: none;
     background-color: white !important;
 }
@@ -225,15 +226,15 @@ aspect-ratio: 2 / 1;
 .Portfolio .OverrideMainBlockContainer--first-slot {
     align-items: start;
     justify-content: start;
-    padding-top: calc(var(--spacing-base-unit)*8);
+    padding-top: 0;
 }
 
 .Portfolio .OverrideDefaultBlock--title,
 .Portfolio .OverrideMainBlock--title {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: calc(var(--text-base-unit) * 8);
-    line-height: calc(var(--text-line-base-unit) * 12);
+    font-size: calc(var(--text-base-unit) * 7);
+    line-height: calc(var(--text-line-base-unit) * 11);
     color: black;
 }
 
@@ -248,8 +249,8 @@ aspect-ratio: 2 / 1;
 .Portfolio .OverrideMainBlock--description {
     text-transform: uppercase;
     font-weight: 400;
-    font-size: calc(var(--text-base-unit) * 8);
-    line-height: calc(var(--text-line-base-unit) * 12);
+    font-size: calc(var(--text-base-unit) * 7);
+    line-height: calc(var(--text-line-base-unit) * 11);
     color: black;
 }
 
@@ -265,7 +266,7 @@ aspect-ratio: 2 / 1;
 .Portfolio .OverrideDefaultBlock--items-wrapper,
 .Portfolio .OverrideMainBlock--items-wrapper {
     grid-column: span 5 / span 5;
-    padding-top: calc(var(--spacing-base-unit)*8);
+    padding: 0;
     background-color: white !important;
 }
 @media screen and (min-width: 1024px) {
