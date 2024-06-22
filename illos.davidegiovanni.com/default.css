@@ -257,7 +257,7 @@ html {}
 }
 
 .Header:has( + div.Page[data-page-slug="index"]) .OverrideHeader--logo {
-    display: hidden;
+    display: none;
 }
 
 .OverrideHeader--desktop-links {
