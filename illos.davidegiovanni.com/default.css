@@ -190,6 +190,8 @@ html {}
 /* Portfolio block */
 
 .Portfolio::before {
+    content: "";
+    display: block;
 width: 100%;
 aspect-ratio: 2 / 1;
 }
@@ -219,10 +221,12 @@ aspect-ratio: 2 / 1;
     }  
 }
 
-/* .Portfolio .OverrideDefaultBlockContainer--first-slot,
+.Portfolio .OverrideDefaultBlockContainer--first-slot,
 .Portfolio .OverrideMainBlockContainer--first-slot {
-    
-} */
+    align-items: start;
+    justify-content: start;
+    padding-top: calc(var(--spacing-base-unit)*8);
+}
 
 .Portfolio .OverrideDefaultBlock--title,
 .Portfolio .OverrideMainBlock--title {
@@ -261,7 +265,7 @@ aspect-ratio: 2 / 1;
 .Portfolio .OverrideDefaultBlock--items-wrapper,
 .Portfolio .OverrideMainBlock--items-wrapper {
     grid-column: span 5 / span 5;
-    padding: 0;
+    padding-top: calc(var(--spacing-base-unit)*8);
     background-color: white !important;
 }
 @media screen and (min-width: 1024px) {
