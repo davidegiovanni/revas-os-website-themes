@@ -189,6 +189,11 @@ html {}
 
 /* Portfolio block */
 
+.Portfolio::before {
+width: 100%;
+aspect-ratio: 2 / 1;
+}
+
 .Portfolio .OverrideDefaultBlock,
 .Portfolio .OverrideMainBlock {
     border-top: 1px solid lightgray;
@@ -197,6 +202,10 @@ html {}
     grid-template-columns: repeat(5, minmax(0, 1fr));
     max-width: none;
     background-color: white !important;
+}
+
+.Portfolio .OverrideMainBlock::before {
+    display: none;
 }
 
 .Portfolio .OverrideDefaultBlock--container,
@@ -221,6 +230,7 @@ html {}
     font-weight: 400;
     font-size: calc(var(--text-base-unit) * 8);
     line-height: calc(var(--text-line-base-unit) * 12);
+    color: black;
 }
 
 .Portfolio .OverrideDefaultBlock--icon,
@@ -236,6 +246,7 @@ html {}
     font-weight: 400;
     font-size: calc(var(--text-base-unit) * 8);
     line-height: calc(var(--text-line-base-unit) * 12);
+    color: black;
 }
 
 .Portfolio .OverrideDefaultBlockContainer--second-slot {
@@ -250,6 +261,8 @@ html {}
 .Portfolio .OverrideDefaultBlock--items-wrapper,
 .Portfolio .OverrideMainBlock--items-wrapper {
     grid-column: span 5 / span 5;
+    padding: 0;
+    background-color: white !important;
 }
 @media screen and (min-width: 1024px) {
     .Portfolio .OverrideDefaultBlock--items-wrapper,
