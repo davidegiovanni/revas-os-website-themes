@@ -128,6 +128,7 @@ html {}
     overflow: hidden;
     gap: calc(var(--spacing-base-unit) * 20);
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -226,25 +227,63 @@ html {}
 
 /* HEADER */
 
-.Header {}
+.OverrideHeader {
+    background-color: transparent !important;
+    width: fit-content;
+}
 
-.Header--desktop-wrapper {}
+.OverrideHeader--desktop-wrapper {
+    background-color: transparent !important;
+    backdrop-filter: none;
+}
 
-.Header--container {}
+.OverrideHeader--container {
+    background-color: transparent !important;
+}
 
-.Header--logo  {}
+.OverrideHeader--logo  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+}
 
-.Header--desktop-links {}
+.OverrideHeader--desktop-links {
+    justify-content: center;
+    width: fit-content;
+}
 
-.Header--desktop-links-wrapper {}
+.OverrideHeader--desktop-links-wrapper {
+    justify-content: center;
+    width: fit-content;
+}
 
-.Header--menu-button {}
+.OverrideHeader--menu-button {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+}
 
-.Header--mobile-wrapper {}
+.OverrideHeader--mobile-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    z-index: 30;
+}
 
-.Header--mobile-links {}
+.OverrideHeader--mobile-links {
+    width: 100%;
+    height: 100%;
+}
 
-.Header--mobile-main-action {}
+.OverrideHeader--mobile-main-action {}
 
 /* NOTIFICATION */
 
