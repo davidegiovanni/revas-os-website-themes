@@ -123,6 +123,14 @@ html {}
     width: 100%;
     height: 100%;
     overflow: hidden;
+    gap: calc(var(--spacing-base-unit) * 20);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media screen and (min-width: 1024px) {
+    .Homepage .OverrideBlockItemsGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 .Homepage .OverrideGridBlockItem {
