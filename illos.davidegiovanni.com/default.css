@@ -627,7 +627,6 @@ html {}
     left: 0;
     z-index: 20;
     isolation: isolate;
-    margin: calc(var(--spacing-base-unit) * 8);
     mix-blend-mode: multiply;
 }
 
