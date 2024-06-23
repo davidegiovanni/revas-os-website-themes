@@ -260,8 +260,8 @@ aspect-ratio: 2 / 1;
     grid-area: a;
 }
 
-.Portfolio .OverrideDefaultBlock--icon,
-.Portfolio .OverrideMainBlock--icon {
+.Portfolio svg,
+.Portfolio svg {
     opacity: 0;
     pointer-events: none;
     user-select: none;
@@ -277,9 +277,9 @@ aspect-ratio: 2 / 1;
     grid-area: c;
 }
 
-.Portfolio .OverrideDefaultBlock .OverrideGhostLink__base-size,
-.Portfolio .OverrideMainBlock .OverrideGhostLink__base-size {
-    text-transform: uppercase;
+.Portfolio .OverrideDefaultBlock .OverrideTextLink__base-size,
+.Portfolio .OverrideMainBlock .OverrideMainBlock--link {
+    text-transform: uppercase !important;
     font-weight: 400;
     font-size: calc(var(--text-base-unit) * 7);
     line-height: calc(var(--text-line-base-unit) * 11);
