@@ -239,6 +239,7 @@ aspect-ratio: 2 / 1;
     grid-template-areas: 
             "a a a b"
             "c c c d";
+    grid-auto-columns: minmax(0, 1fr);
     &::before {
         content: var(--portfolio-date);
         display: block;
@@ -285,13 +286,14 @@ aspect-ratio: 2 / 1;
     font-size: calc(var(--text-base-unit) * 7);
     line-height: calc(var(--text-line-base-unit) * 11);
     color: black !important;
-    text-decoration: dotted;
+    text-decoration: underline;
     text-decoration-color: inherit;
+    text-decoration-style: dotted;
     padding: 0 !important;
     grid-area: b;
-    &::before {
+    &::after {
         content: "→";
-        display: "inline"
+        display: "inline";
     }
 }
 
