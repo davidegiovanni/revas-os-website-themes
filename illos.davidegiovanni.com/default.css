@@ -196,6 +196,12 @@ width: 100%;
 aspect-ratio: 2 / 1;
 }
 
+@media screen and (min-width: 1024px) {
+    .Portfolio::before {
+    aspect-ratio: 4 / 1;
+    }
+}
+
 .Portfolio .OverrideDefaultBlock,
 .Portfolio .OverrideMainBlock {
     border-top: 1px solid lightgray;
@@ -226,12 +232,15 @@ aspect-ratio: 2 / 1;
 .Portfolio .OverrideMainBlockContainer--first-slot {
     align-items: start;
     justify-content: start;
-    padding-top: 0 !important;
+    padding: 0 !important;
+    min-height: 200px;
+    display: grid;
     grid-template-areas: 
             "a a a b"
             "c c c d";
-    &::after {
+    &::before {
         content: var(--portfolio-date);
+        display: block;
         grid-area: d;
         text-transform: uppercase;
         font-weight: 400;
