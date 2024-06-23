@@ -465,12 +465,14 @@ html {}
     max-width: none;
     padding: 0 !important;
     background-color: white !important;
+    background-color: lightgray !important;
 }
 
 .LargeGrid .OverrideBlockItemsGrid {
     max-width: none;
     gap: 1px !important;
     padding: 0 !important;
+    background-color: lightgray !important;
 }
 
 .LargeGrid .OverrideGridBlockItem {
@@ -497,7 +499,6 @@ html {}
     height: 100%;
     overflow: hidden;
     display: block;
-    padding: 0;
     top: 0;
     right: 0;
     left: 0;
@@ -560,6 +561,24 @@ html {}
 .LargeGrid .OverrideGridBlockItem--attachment picture {
     object-fit: cover;
     object-position: center;
+}
+
+.Portfolio .OverrideTextLink__base-size,
+.Portfolio .OverrideMainBlock--link {
+    text-transform: uppercase !important;
+    font-weight: 400;
+    font-size: calc(var(--text-base-unit) * 7);
+    line-height: calc(var(--text-line-base-unit) * 11);
+    color: black !important;
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    text-decoration-style: dotted;
+    padding: 0 !important;
+    grid-area: d;
+    &::after {
+        content: "→";
+        display: "inline";
+    }
 }
 
 /* Columns */
