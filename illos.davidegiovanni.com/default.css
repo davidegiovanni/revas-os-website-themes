@@ -11,7 +11,23 @@
 
 :root {}
 
-* {}
+* {
+    cursor: none !important;
+    /* Hide the default cursor */
+}
+
+#custom-cursor {
+    position: absolute;
+    z-index: 80;
+    pointer-events: none;
+    /* Ensure the custom cursor image doesn't interfere with interactions */
+    width: 32px;
+    /* Adjust the size of your custom cursor image */
+    height: 32px;
+    transform: translate(-50%, -50%);
+    transform-origin: top left;
+    /* Center the image under the cursor */
+}
 
 body {}
 
@@ -86,6 +102,7 @@ html {}
     z-index: 20;
     mix-blend-mode: multiply;
 }
+
 .Homepage .OverrideDefaultBlock--attachment img,
 .Homepage .OverrideDefaultBlock--attachment picture,
 .Homepage .OverrideMainBlock--attachment img,
@@ -192,13 +209,13 @@ html {}
 .Portfolio::before {
     content: "";
     display: block;
-width: 100%;
-aspect-ratio: 2 / 1;
+    width: 100%;
+    aspect-ratio: 2 / 1;
 }
 
 @media screen and (min-width: 1024px) {
     .Portfolio::before {
-    aspect-ratio: 4 / 1;
+        aspect-ratio: 4 / 1;
     }
 }
 
@@ -221,11 +238,13 @@ aspect-ratio: 2 / 1;
 .Portfolio .OverrideMainBlock--container {
     grid-column: span 5 / span 5;
 }
+
 @media screen and (min-width: 1024px) {
+
     .Portfolio .OverrideDefaultBlock--container,
     .Portfolio .OverrideMainBlock--container {
         grid-column: span 2 / span 2;
-    }  
+    }
 }
 
 .Portfolio .OverrideDefaultBlockContainer--first-slot,
@@ -236,10 +255,11 @@ aspect-ratio: 2 / 1;
     min-height: 200px;
     display: grid;
     grid-auto-rows: min-content;
-    grid-template-areas: 
-            "a a a b"
-            "c c c d";
+    grid-template-areas:
+        "a a a b"
+        "c c c d";
     grid-auto-columns: minmax(0, 1fr);
+
     &::before {
         content: var(--portfolio-date);
         display: block;
@@ -248,7 +268,7 @@ aspect-ratio: 2 / 1;
         font-weight: 400;
         font-size: calc(var(--text-base-unit) * 7);
         line-height: calc(var(--text-line-base-unit) * 11);
-        color: black  !important;
+        color: black !important;
     }
 }
 
@@ -258,7 +278,7 @@ aspect-ratio: 2 / 1;
     font-weight: 400;
     font-size: calc(var(--text-base-unit) * 7);
     line-height: calc(var(--text-line-base-unit) * 11);
-    color: black  !important;
+    color: black !important;
     grid-area: a;
 }
 
@@ -275,7 +295,7 @@ aspect-ratio: 2 / 1;
     font-weight: 400;
     font-size: calc(var(--text-base-unit) * 7);
     line-height: calc(var(--text-line-base-unit) * 11);
-    color: black  !important;
+    color: black !important;
     grid-area: c;
 }
 
@@ -291,6 +311,7 @@ aspect-ratio: 2 / 1;
     text-decoration-style: dotted;
     padding: 0 !important;
     grid-area: b;
+
     &::after {
         content: "→";
         display: "inline";
@@ -312,11 +333,13 @@ aspect-ratio: 2 / 1;
     padding: 0;
     background-color: white !important;
 }
+
 @media screen and (min-width: 1024px) {
+
     .Portfolio .OverrideDefaultBlock--items-wrapper,
-.Portfolio .OverrideMainBlock--items-wrapper {
+    .Portfolio .OverrideMainBlock--items-wrapper {
         grid-column: span 3 / span 3;
-    }  
+    }
 }
 
 .Portfolio .OverrideDefaultBlock--items-container,
@@ -385,6 +408,121 @@ aspect-ratio: 2 / 1;
     object-position: center;
 }
 
+/* Portfolio block */
+
+.LargeGrid::before {
+    content: "";
+    display: block;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+}
+
+@media screen and (min-width: 1024px) {
+    .LargeGrid::before {
+        aspect-ratio: 4 / 1;
+    }
+}
+
+.LargeGrid .OverrideDefaultBlock,
+.LargeGrid .OverrideMainBlock {
+    padding: 0 !important;
+    max-width: none;
+    background-color: white !important;
+}
+
+.LargeGrid .OverrideMainBlock::before {
+    display: none;
+}
+
+.LargeGrid .OverrideDefaultBlock--container,
+.LargeGrid .OverrideMainBlock--container {
+    display: none !important;
+}
+
+.LargeGrid .OverrideDefaultBlockContainer--first-slot,
+.LargeGrid .OverrideMainBlockContainer--first-slot {
+    display: none !important;
+}
+
+.LargeGrid .OverrideDefaultBlockContainer--second-slot {
+    display: none;
+}
+
+.LargeGrid .OverrideDefaultBlock--items-wrapper,
+.LargeGrid .OverrideMainBlock--items-wrapper {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: lightgray !important;
+}
+
+.LargeGrid .OverrideDefaultBlock--items-container,
+.LargeGrid .OverrideMainBlock--items-container {
+    width: 100%;
+    max-width: none;
+    padding: 0 !important;
+    background-color: white !important;
+}
+
+.LargeGrid .OverrideBlockItemsGrid {
+    max-width: none;
+    gap: 1px !important;
+}
+
+.LargeGrid .OverrideGridBlockItem {
+    border-width: 0 !important;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    aspect-ratio: 1 / 1;
+}
+
+.LargeGrid .OverrideGridBlockItem--container {
+    position: static;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.LargeGrid .OverrideGridBlockItemContainer--second-slot {
+    display: none !important;
+}
+
+.LargeGrid .OverrideGridBlockItemContainer--first-slot {
+    position: static;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+}
+
+.LargeGrid .OverrideGridBlockItem--title {
+    display: none !important;
+}
+
+.LargeGrid .OverrideGridBlockItem--description {
+    display: none !important;
+}
+
+.LargeGrid .OverrideGridBlockItem--attachment {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    aspect-ratio: 2 / 1;
+}
+
+.LargeGrid .OverrideGridBlockItem--attachment img,
+.LargeGrid .OverrideGridBlockItem--attachment picture {
+    object-fit: cover;
+    object-position: center;
+}
+
 /* Columns */
 
 .BlockItemsColumns {}
@@ -444,7 +582,7 @@ aspect-ratio: 2 / 1;
     backdrop-filter: none;
 }
 
-.OverrideHeader--logo  {
+.OverrideHeader--logo {
     position: fixed;
     top: 0;
     left: 0;
@@ -454,7 +592,7 @@ aspect-ratio: 2 / 1;
     mix-blend-mode: multiply;
 }
 
-.Header:has( + div.Page[data-page-slug="index"]) .OverrideHeader--logo {
+.Header:has(+ div.Page[data-page-slug="index"]) .OverrideHeader--logo {
     display: none;
 }
 
@@ -526,6 +664,7 @@ aspect-ratio: 2 / 1;
     justify-content: end !important;
     align-items: start;
 }
+
 .OverrideHeader--mobile-links a {
     width: 100%;
     height: 100%;
@@ -686,70 +825,48 @@ div.z-\[70\] {
 
 /* ACCESSIBILITY CONFIGURATOR */
 
-.ToolBar--accessibility-configurator {
-}
+.ToolBar--accessibility-configurator {}
 
-.AccessibilityConfigurator--trigger-button {
-}
+.AccessibilityConfigurator--trigger-button {}
 
-.AccessibilityConfigurator--trigger-icon {
-}
+.AccessibilityConfigurator--trigger-icon {}
 
-.AccessibilityConfigurator--menu-content {
-}
+.AccessibilityConfigurator--menu-content {}
 
-.AccessibilityMenu--label {
-}
+.AccessibilityMenu--label {}
 
-.AccessibilityMenu--radio-group {
-}
+.AccessibilityMenu--radio-group {}
 
-.AccessibilityMenu--radio-item {
-}
+.AccessibilityMenu--radio-item {}
 
-.AccessibilityMenu--label__small-size {
-}
+.AccessibilityMenu--label__small-size {}
 
 /* ERRORS */
 
-.AppError {
-}
+.AppError {}
 
-.AppError--container {
-}
+.AppError--container {}
 
-.AppError--title {
-}
+.AppError--title {}
 
-.AppError--details {
-}
+.AppError--details {}
 
-.AppError--message {
-}
+.AppError--message {}
 
-.AppError--list {
-}
+.AppError--list {}
 
-.DefaultError {
-}
+.DefaultError {}
 
-.DefaultError--title {
-}
+.DefaultError--title {}
 
-.DefaultError--description {
-}
+.DefaultError--description {}
 
-.DefaultError--link {
-}
+.DefaultError--link {}
 
-.DefaultError--details {
-}
+.DefaultError--details {}
 
 /* OTHERS */
 
-.DefaultLinkIcon__small-size {
-}
+.DefaultLinkIcon__small-size {}
 
-.LoadingBar {
-}
-
+.LoadingBar {}
