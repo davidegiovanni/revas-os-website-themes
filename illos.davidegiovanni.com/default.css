@@ -235,6 +235,7 @@ aspect-ratio: 2 / 1;
     padding: 0 !important;
     min-height: 200px;
     display: grid;
+    grid-auto-rows: min-content;
     grid-template-areas: 
             "a a a b"
             "c c c d";
@@ -285,10 +286,12 @@ aspect-ratio: 2 / 1;
     line-height: calc(var(--text-line-base-unit) * 11);
     color: black !important;
     text-decoration: dotted;
+    text-decoration-color: inherit;
     padding: 0 !important;
-    grid-area: c;
+    grid-area: b;
     &::before {
-        content: "→",
+        content: "→";
+        display: "inline"
     }
 }
 
