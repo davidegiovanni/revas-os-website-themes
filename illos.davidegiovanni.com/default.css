@@ -17,7 +17,7 @@
 }
 
 #custom-cursor {
-    position: absolute;
+    position: fixed;
     z-index: 80;
     pointer-events: none;
     /* Ensure the custom cursor image doesn't interfere with interactions */
@@ -419,7 +419,7 @@ html {}
 }
 
 @media screen and (min-width: 1024px) {
-    .LargeGrid::before {
+    .LargeGrid.OverrideDefaultBlock::before {
         aspect-ratio: 4 / 1;
     }
 }
@@ -544,6 +544,7 @@ html {}
 .LargeGrid .OverrideGridBlockItem--description {
     text-transform: uppercase;
     font-weight: 400;
+    text-align: right;
     font-size: calc(var(--text-base-unit) * 7);
     line-height: calc(var(--text-line-base-unit) * 11);
     grid-area: b;
@@ -581,6 +582,7 @@ html {}
     text-decoration-style: dotted;
     padding: 0 !important;
     grid-area: d;
+    text-align: right;
     &::after {
         content: "→";
         display: "inline";
