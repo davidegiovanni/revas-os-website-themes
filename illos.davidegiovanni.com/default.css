@@ -226,7 +226,19 @@ aspect-ratio: 2 / 1;
 .Portfolio .OverrideMainBlockContainer--first-slot {
     align-items: start;
     justify-content: start;
-    padding-top: 0;
+    padding-top: 0 !important;
+    grid-template-areas: 
+            "a a a b"
+            "c c c d";
+    &::after {
+        content: var(--portfolio-date);
+        grid-area: d;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: calc(var(--text-base-unit) * 7);
+        line-height: calc(var(--text-line-base-unit) * 11);
+        color: black  !important;
+    }
 }
 
 .Portfolio .OverrideDefaultBlock--title,
@@ -235,7 +247,8 @@ aspect-ratio: 2 / 1;
     font-weight: 400;
     font-size: calc(var(--text-base-unit) * 7);
     line-height: calc(var(--text-line-base-unit) * 11);
-    color: black;
+    color: black  !important;
+    grid-area: a;
 }
 
 .Portfolio .OverrideDefaultBlock--icon,
@@ -251,7 +264,23 @@ aspect-ratio: 2 / 1;
     font-weight: 400;
     font-size: calc(var(--text-base-unit) * 7);
     line-height: calc(var(--text-line-base-unit) * 11);
-    color: black;
+    color: black  !important;
+    grid-area: c;
+}
+
+.Portfolio .OverrideDefaultBlock .OverrideGhostLink__base-size,
+.Portfolio .OverrideMainBlock .OverrideGhostLink__base-size {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: calc(var(--text-base-unit) * 7);
+    line-height: calc(var(--text-line-base-unit) * 11);
+    color: black !important;
+    text-decoration: dotted;
+    padding: 0 !important;
+    grid-area: c;
+    &::before {
+        content: "→",
+    }
 }
 
 .Portfolio .OverrideDefaultBlockContainer--second-slot {
