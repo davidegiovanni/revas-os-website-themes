@@ -10,7 +10,7 @@
 --border-radius-inner */
 
 :root {
-    --background-color: var(--background-color);
+    --background-color: #fbf8f3;
     --display-font: 'Switzer-Extralight', serif
 }
 
