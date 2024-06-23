@@ -589,15 +589,18 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
 .LargeGrid .OverrideDefaultBlock--container,
 .LargeGrid .OverrideMainBlock--container {
     display: none !important;
+    background-color: transparent !important;
 }
 
 .LargeGrid .OverrideDefaultBlockContainer--first-slot,
 .LargeGrid .OverrideMainBlockContainer--first-slot {
     display: none !important;
+    background-color: transparent !important;
 }
 
 .LargeGrid .OverrideDefaultBlockContainer--second-slot {
     display: none;
+    background-color: transparent !important;
 }
 
 .LargeGrid .OverrideDefaultBlock--items-wrapper,
@@ -643,6 +646,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
     height: 100%;
     overflow: hidden;
     display: block;
+    background-color: transparent !important;
 }
 
 .LargeGrid .OverrideGridBlockItemContainer--second-slot {
@@ -663,7 +667,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
         "a b"
         "c d";
     grid-auto-columns: minmax(0, 1fr);
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .LargeGrid .OverrideGridBlockItemContainer--first-slot {
@@ -682,6 +686,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: transparent !important;
 }
 
 .LargeGrid .OverrideGridBlockItem--title {
@@ -690,6 +695,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
     font-size: calc(var(--text-base-unit) * 7);
     line-height: calc(var(--text-line-base-unit) * 11);
     grid-area: a;
+    background-color: transparent !important;
 }
 
 .LargeGrid .OverrideGridBlockItem--description {
@@ -699,6 +705,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
     font-size: calc(var(--text-base-unit) * 7);
     line-height: calc(var(--text-line-base-unit) * 11);
     grid-area: b;
+    background-color: transparent !important;
 }
 
 .LargeGrid .OverrideGridBlockItem--attachment {
@@ -706,6 +713,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
     height: 100%;
     overflow: hidden;
     aspect-ratio: 1 / 1;
+    background-color: transparent !important;
 }
 @media screen and (min-width: 1024px) {
     .LargeGrid .OverrideGridBlockItem--attachment {
@@ -719,6 +727,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
 .LargeGrid .OverrideGridBlockItem--attachment picture {
     object-fit: contain;
     object-position: center center;
+    background-color: transparent !important;
 }
 
 /* Columns */
