@@ -32,6 +32,7 @@
     height: 32px;
     transform: translate(-50%, -50%);
     transform-origin: top left;
+    background-color: transparent !important;
     /* Center the image under the cursor */
 }
 
@@ -1000,17 +1001,30 @@ div.z-\[70\] {
 
 /* ATTACHMENT */
 
-.Attachment--video {}
+.Attachment--video {
+    background-color: transparent !important;
+}
 
-.Attachment--figure {}
 
-.AttachmentFigure--picture {}
+.Attachment--figure {
+    background-color: transparent !important;
+}
 
-.AttachmentFigure--caption {}
+.AttachmentFigure--picture {
+    background-color: transparent !important;
+}
 
-.AttachmentPicture--source {}
+.AttachmentFigure--caption {
+    background-color: transparent !important;
+}
 
-.AttachmentPicture--image {}
+.AttachmentPicture--source {
+    background-color: transparent !important;
+}
+
+.AttachmentPicture--image {
+    background-color: transparent !important;
+}
 
 /* FEED */
 
