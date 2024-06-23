@@ -114,7 +114,9 @@ html {
     opacity: 1;
 }
 
-.DefaultBlock--attachment {}
+.DefaultBlock--attachment {
+    background-color: transparent !important;
+}
 
 /* Main block */
 
@@ -178,7 +180,9 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
     color: black !important;
 }
 
-.MainBlock--attachment {}
+.MainBlock--attachment {
+    background-color: transparent !important;
+}
 
 .MainBlock--link {
     grid-area: c;
@@ -252,6 +256,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
     margin-bottom: auto;
     z-index: 20;
     mix-blend-mode: multiply;
+    background-color: transparent !important;
 }
 
 .Homepage .OverrideDefaultBlock--attachment img,
@@ -260,6 +265,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
 .Homepage .OverrideMainBlock--attachment picture {
     object-fit: contain;
     object-position: center;
+    background-color: transparent !important;
 }
 
 .Homepage .OverrideDefaultBlock--items-wrapper,
@@ -469,6 +475,7 @@ padding: calc(var(--spacing-base-unit) * 8) !important;
 .Portfolio .OverrideDefaultBlock--attachment,
 .Portfolio .OverrideMainBlock--attachment {
     display: none;
+    background-color: transparent !important;
 }
 
 .Portfolio .OverrideDefaultBlock--items-wrapper,
