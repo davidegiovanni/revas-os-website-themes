@@ -208,7 +208,7 @@ aspect-ratio: 2 / 1;
     padding: calc(var(--spacing-base-unit) * 12);
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    padding: calc(var(--spacing-base-unit) * 8);
+    padding: calc(var(--spacing-base-unit) * 8) !important;
     max-width: none;
     background-color: white !important;
 }
