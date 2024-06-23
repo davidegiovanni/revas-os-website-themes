@@ -9,7 +9,10 @@
 --border-radius
 --border-radius-inner */
 
-:root {}
+:root {
+    --background-color: var(--background-color);
+    --display-font: 'Switzer-Extralight', serif
+}
 
 * {
     cursor: none !important;
@@ -227,7 +230,7 @@ html {}
     grid-template-columns: repeat(5, minmax(0, 1fr));
     padding: calc(var(--spacing-base-unit) * 8) !important;
     max-width: none;
-    background-color: white !important;
+    background-color: var(--background-color) !important;
 }
 
 .Portfolio .OverrideMainBlock::before {
@@ -331,7 +334,7 @@ html {}
 .Portfolio .OverrideMainBlock--items-wrapper {
     grid-column: span 5 / span 5;
     padding: 0;
-    background-color: white !important;
+    background-color: var(--background-color) !important;
 }
 
 @media screen and (min-width: 1024px) {
@@ -347,7 +350,7 @@ html {}
     width: 100%;
     max-width: none;
     padding: 0;
-    background-color: white !important;
+    background-color: var(--background-color) !important;
 }
 
 .Portfolio .OverrideBlockItemsGrid {
@@ -428,7 +431,7 @@ html {}
 .LargeGrid.OverrideMainBlock {
     padding: 0 !important;
     max-width: none;
-    background-color: white !important;
+    background-color: var(--background-color) !important;
 }
 
 .LargeGrid .OverrideMainBlock::before {
@@ -464,7 +467,7 @@ html {}
     width: 100%;
     max-width: none !important;
     padding: 0 !important;
-    background-color: white !important;
+    background-color: var(--background-color) !important;
     background-color: lightgray !important;
 }
 
@@ -669,7 +672,7 @@ html {}
 
 .OverrideHeader--desktop-links .OverrideGhostLink__base-size {
     border-radius: 9999px;
-    background-color: white;
+    background-color: var(--background-color);
     color: black;
     border: 1px solid black;
     text-transform: uppercase;
@@ -698,7 +701,7 @@ html {}
     right: 0;
     z-index: 50;
     border-radius: 9999px;
-    background-color: white;
+    background-color: var(--background-color);
     color: black;
     border: 1px solid black;
     text-transform: uppercase;
