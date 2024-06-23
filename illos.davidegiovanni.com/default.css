@@ -408,7 +408,7 @@ html {}
     object-position: center;
 }
 
-/* Portfolio block */
+/* LargeGrid block */
 
 .LargeGrid::before {
     content: "";
@@ -455,6 +455,7 @@ html {}
     padding-left: 0 !important;
     padding-right: 0 !important;
     background-color: lightgray !important;
+    max-width: none;
 }
 
 .LargeGrid .OverrideDefaultBlock--items-container,
@@ -468,13 +469,13 @@ html {}
 .LargeGrid .OverrideBlockItemsGrid {
     max-width: none;
     gap: 1px !important;
+    padding: 0 !important;
 }
 
 .LargeGrid .OverrideGridBlockItem {
     border-width: 0 !important;
     position: relative;
     width: 100%;
-    height: 100%;
     overflow: hidden;
     display: block;
     padding: 0;
@@ -490,31 +491,68 @@ html {}
 }
 
 .LargeGrid .OverrideGridBlockItemContainer--second-slot {
-    display: none !important;
-}
-
-.LargeGrid .OverrideGridBlockItemContainer--first-slot {
-    position: static;
+    position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
     display: block;
     padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    aspect-ratio: 1 / 1;
+    display: grid;
+    grid-auto-rows: min-content;
+    grid-template-areas:
+        "a b"
+        "c d";
+    grid-auto-columns: minmax(0, 1fr);
+    background-color: transparent;
+}
+
+.LargeGrid .OverrideGridBlockItemContainer--first-slot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    aspect-ratio: 1 / 1;
 }
 
 .LargeGrid .OverrideGridBlockItem--title {
-    display: none !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: calc(var(--text-base-unit) * 7);
+    line-height: calc(var(--text-line-base-unit) * 11);
+    grid-area: a;
 }
 
 .LargeGrid .OverrideGridBlockItem--description {
-    display: none !important;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: calc(var(--text-base-unit) * 7);
+    line-height: calc(var(--text-line-base-unit) * 11);
+    grid-area: b;
 }
 
 .LargeGrid .OverrideGridBlockItem--attachment {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 1 / 1;
+}
+@media screen and (min-width: 1024px) {
+    .LargeGrid .OverrideGridBlockItem--attachment {
+        width: 60%;
+    } 
 }
 
 .LargeGrid .OverrideGridBlockItem--attachment img,
