@@ -410,7 +410,8 @@ html {}
 
 /* LargeGrid block */
 
-.LargeGrid::before {
+.LargeGrid.OverrideDefaultBlock::before,
+.LargeGrid.OverrideDefaultBlock::before {
     content: "";
     display: block;
     width: 100%;
@@ -423,8 +424,8 @@ html {}
     }
 }
 
-.LargeGrid .OverrideDefaultBlock,
-.LargeGrid .OverrideMainBlock {
+.LargeGrid.OverrideDefaultBlock,
+.LargeGrid.OverrideMainBlock {
     padding: 0 !important;
     max-width: none;
     background-color: white !important;
