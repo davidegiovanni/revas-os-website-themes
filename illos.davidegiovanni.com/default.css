@@ -456,13 +456,13 @@ html {}
     padding-left: 0 !important;
     padding-right: 0 !important;
     background-color: lightgray !important;
-    max-width: none;
+    max-width: none !important;
 }
 
 .LargeGrid .OverrideDefaultBlock--items-container,
 .LargeGrid .OverrideMainBlock--items-container {
     width: 100%;
-    max-width: none;
+    max-width: none !important;
     padding: 0 !important;
     background-color: white !important;
     background-color: lightgray !important;
@@ -479,6 +479,7 @@ html {}
     border-width: 0 !important;
     position: relative;
     width: 100%;
+    height: auto;
     overflow: hidden;
     display: block;
     padding: 0;
@@ -527,6 +528,9 @@ html {}
     bottom: 0;
     z-index: 10;
     aspect-ratio: 1 / 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .LargeGrid .OverrideGridBlockItem--title {
@@ -554,13 +558,15 @@ html {}
 @media screen and (min-width: 1024px) {
     .LargeGrid .OverrideGridBlockItem--attachment {
         width: 60%;
+        height: 60%;
+        margin: auto;
     } 
 }
 
 .LargeGrid .OverrideGridBlockItem--attachment img,
 .LargeGrid .OverrideGridBlockItem--attachment picture {
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
+    object-position: center center;
 }
 
 .Portfolio .OverrideTextLink__base-size,
